@@ -1,0 +1,151 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.6rem;
+}
+
+  header .logo-div{
+      display: flex;
+      align-items: center;
+  }
+
+  header .logo-div img{
+      width: 15rem;
+      height: 15rem;
+      margin-top: -1rem;
+      margin-left: -2.4rem;
+  }
+
+  header .logo-div .name{
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-left: -5.5rem;
+  }
+
+
+  .nav-div ul{
+      list-style-type: none;
+      display: flex;
+      gap: 3.2rem;
+  }
+
+  .nav-div ul li a{
+      font-size: 2rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      transition: all 0.2s linear;
+  }
+
+  .nav-div ul li a:hover{
+      font-weight: 700;
+  }
+
+  .mobile-nav{
+      width: 70%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      color: var(--clr-white);
+      background: #4e45d595;
+      padding: 10rem 0;
+      z-index: 990;
+      display: block;
+      transition: all 0.5s ease;
+      transform-origin: right;
+      -moz-transform-origin: right;
+      -webkit-transform-origin: right;
+      transform: translateX(100%);
+      backdrop-filter: blur(20px);
+  }
+
+  .mobile-nav ul{
+      flex-direction: column;
+      /* align-items: center; */
+  }
+
+  .mobile-nav ul li a{
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      transition: all 0.2s ease;
+  }
+
+  .mobile-nav ul li a:hover{
+      background: var(--clr-orange);
+  }
+
+  .mobile-nav.active{
+      transform: translateX(0);
+  }
+
+  .overlay{
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 950;
+      pointer-events: none;
+      visibility: hidden;
+  }
+
+  .overlay.active{
+      pointer-events: initial;
+      visibility: visible;
+  }
+
+  .hamburger{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      position: fixed;
+      top: 2.2rem;
+      right: 3rem;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+  }
+
+    .hamburger span, 
+    .hamburger span::before, 
+    .hamburger span::after{
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: red;
+      position: relative;
+      border-radius: 4px;
+      transition: all 0.4s ease;
+    }
+    
+    .hamburger span::before{
+      content: "";
+      position: absolute;
+      top: -10px;
+    }
+    
+    .hamburger span::after{
+      content: "";
+      position: absolute;
+      top: 10px;
+    }
+    
+    .hamburger.active span::before{
+       transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .hamburger.active span::after{
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    .hamburger.active span{
+      background: transparent;
+    }
+
