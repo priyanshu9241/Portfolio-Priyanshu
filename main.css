@@ -10,6 +10,8 @@
 
 
 :root {
+  --bg-col: #fff;
+  --text-col:black;
   --clr-black: #000;
   --clr-white: #fff;
   --clr-orange: #e84949;
@@ -24,7 +26,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
+
 }
 
 html {
@@ -35,6 +37,13 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Be Vietnam Pro', sans-serif;
+ 
+
+}
+.theme{
+  background-color:black;
+  color:white;
+
 }
 
 a {

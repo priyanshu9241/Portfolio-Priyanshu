@@ -148,8 +148,15 @@
 
 
 @media (max-width: 650px) {
+
+    .dark img{
+        display: inline;
+        position: absolute;
+        top: 6%;
+        right: 16%;
+        /* z-index: 13; */
+    }
     header {
-        background: var(--clr-white);
         position: sticky;
         top: 0;
         z-index: 998;
