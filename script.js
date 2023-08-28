@@ -75,3 +75,15 @@ darkModeToggleMob.onclick = function () {
     hero.src = "images/userAsset/hero.jpg";
   }
 };
+
+//preloader
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the outer element
+  const outerElement = document.getElementById("outer-box");
+
+  // Set a timeout to remove the elements after 5 seconds
+  setTimeout(function () {
+    outerElement.remove();
+  }, 2500); // 1000 milliseconds = 1 second
+});
