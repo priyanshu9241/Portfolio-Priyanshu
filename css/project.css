@@ -1,4 +1,3 @@
-/* ///////////////////// project section //////////////// */
 .project-section {
     background-color: var(--clr-light-gray);
     padding-top: 3rem;
@@ -18,7 +17,7 @@
 
 .project-container .project-card {
     width: 90%;
-    height: 55rem;
+    height: 65rem;
     background-color: #afafaf;
     background-image: url('../images/projects/p1.jpeg');
     background-repeat: no-repeat;
@@ -92,11 +91,11 @@
     scale: 1.1;
 }
 
-.project-card:nth-child(odd) .project-content {
+.project-card:nth-child(even) .project-content {
     left: 10%;
 }
 
-.project-card:nth-child(even) .project-content {
+.project-card:nth-child(odd) .project-content {
     right: 10%;
 }
 

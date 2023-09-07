@@ -18,7 +18,7 @@ function closeMobileNav() {
 overlay.addEventListener("click", closeMobileNav);
 
 contactForm.addEventListener("submit", (event) => {
-  // event.preventDefault();
+  event.preventDefault();
   alert("your response has been successfully submitted");
 });
 
